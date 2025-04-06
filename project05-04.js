@@ -48,7 +48,9 @@ for (let i = 0; i < phrases.length; i++) {
             popup.document.body.appendChild(phrase);
             popup.document.body.appendChild(footnote);
             popup.document.body.appendChild(closeButton);
-
+            
+            // step 10 adding a onclick handler to closeButton into a function that has the statement popup.close()
+            // closes the popup window when clicked on
             closeButton.onclick = function() {
                   popup.close();
             }
